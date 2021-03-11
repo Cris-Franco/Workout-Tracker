@@ -14,3 +14,8 @@ app.use(morgan("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
+
+// Run server
+app.listen(PORT, function () {
+  console.log(`App listening on Port ${PORT}!`);
+});
